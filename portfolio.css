@@ -8,31 +8,45 @@ body{
     grid-template-rows: repeat(12,1fr);
     
 }
-@media screen and (width<700px){
+
+@media screen and (min-width:320px) and (max-width:480px){
+    /* phones */
     .page{
-        box-shadow:0px 0px 50px green;
-        background-color: red;
+        background-color: pink;
     }
 }
-/* media break points for devices */
-@media screen and (max-width:600px){
+@media screen and (min-width:481px) and (max-width:600px){
     /* phones */
-}
-@media screen and (min-width:600px){
-    /* portrait tablets and alrge phones */
+    .page{
+        background-color: rgb(24, 219, 31);
+    }
+}@media screen and (min-width:601px) and (max-width:767px){
+    /* phones */
+    .page{
+        background-color: yellow;
+    }
+    
 }
 @media screen and (min-width:768px){
     /* landscape tablets */
+    .page{
+        background-color: rgb(92, 30, 206);
+    }
 }
+
 @media screen and (min-width:992px){
     /* laptops and desktops */
+    .page{
+        background-color: rgb(81, 161, 187);
+    }
 }
+
 @media screen and (min-width:1200px){
     /* large laptops and desktops */
+    .page{
+        background-color: rgb(189, 13, 16);
+    }
 }
-/* @media screen and (min-width:600px){} */
-
-
 
 /* .header{
     grid-row: 1/3;
